@@ -26,7 +26,7 @@ namespace GameTestJump
             timer1.Start();
             this.KeyDown += new KeyEventHandler(OnKeyboardPressed);
             this.KeyUp += new KeyEventHandler(OnKeyboardUp);
-            //this.BackgroundImage = Properties.Resources.Background_Jungle;
+            this.BackgroundImage = Properties.Resources.Background_Jungle;
 
             this.Height = 600;
             this.Width = 480;

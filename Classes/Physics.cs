@@ -47,14 +47,14 @@ namespace GameTestJump.Classes
             for(int i=0; i<PlatformController.platforms.Count;i++)
             {
                 var platform = PlatformController.platforms[i];
-                if(transform.position.X+transform.size.Width/2>=platform.transform.position.X && transform.position.X+transform.size.Width/2<=platform.transform.position.X+platform.transform.size.Width)
+                if (transform.position.X + transform.size.Width / 2 >= platform.transform.position.X && transform.position.X + transform.size.Width / 2 <= platform.transform.position.X + platform.transform.size.Width)
                 {
-                    if(transform.position.Y+transform.size.Height>=platform.transform.position.Y && transform.position.Y+ transform.size.Height<=platform.transform.position.Y+platform.transform.size.Height)
+                    if (transform.position.Y + transform.size.Height >= platform.transform.position.Y && transform.position.Y + transform.size.Height <= platform.transform.position.Y + platform.transform.size.Height)
                     {
                         if (gravity > 0)
                         {
                             AddForce();
-                            if(!platform.isTouchedByPlayer)
+                            if (!platform.isTouchedByPlayer)
                             {
                                 PlatformController.score += 20;
                                 PlatformController.GenerateRandomPlatform();
@@ -68,7 +68,6 @@ namespace GameTestJump.Classes
 
         public void AddForce()
         {
-            
             gravity = -10;
         }
     }

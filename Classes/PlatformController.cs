@@ -44,7 +44,6 @@ namespace GameTestJump.Classes
             platform platform = new platform(position);
             platforms.Add(platform);
             
-
         }
 
         public static void ClearPlatforms()
